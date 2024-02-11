@@ -29,7 +29,7 @@ const Main = () => {
       <section className="about">
         <img
           className="about__image"
-          src="../assets/images/interior-3.jpg"
+          src="../../images/interior-3.jpg"
           alt="Image of interior design"
         />
         <div className="about__content">
@@ -68,11 +68,7 @@ const Main = () => {
 
         <div className="program__image-wrapper">
           <div className="image--top">
-            <img
-              className="image--bot"
-              src="../assets/images/interior-6.jpg"
-              alt=""
-            />
+            <img className="image--bot" src="/images/interior-6.jpg" alt="" />
           </div>
         </div>
 
@@ -158,7 +154,7 @@ const Main = () => {
         </div>
         <img
           className="contact__image"
-          src="../assets/images/interior-10.jpg"
+          src="/images/interior-10.jpg"
           alt="Image of an interior design"
         />
       </section>

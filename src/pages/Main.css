@@ -22,7 +22,7 @@
   min-width: 535px;
   min-height: 535px;
 
-  background: url("../assets/images/interior-1.jpg");
+  background: url("/images/interior-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -100,7 +100,7 @@
   min-width: 458px;
   min-height: 458px;
 
-  background: url("../assets/images/interior-2.jpg");
+  background: url("/images/interior-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -218,7 +218,7 @@
   width: 833px;
   height: 625px;
 
-  background: no-repeat url("../assets/images/interior-4.jpg");
+  background: no-repeat url("/images/interior-4.jpg");
   background-size: cover;
 }
 
@@ -231,7 +231,7 @@
 .image--top {
   position: relative;
 
-  background: no-repeat url("../assets/images/interior-5.jpg");
+  background: no-repeat url("/images/interior-5.jpg");
   background-size: cover;
 }
 
@@ -341,7 +341,7 @@
   width: 457px;
   height: 811px;
 
-  background: no-repeat url("../assets/images/interior-7.jpg");
+  background: no-repeat url("/images/interior-7.jpg");
   background-size: cover;
 }
 
@@ -370,7 +370,7 @@
   width: 497px;
   height: 746px;
 
-  background: no-repeat url("../assets/images/interior-8.jpg");
+  background: no-repeat url("/images/interior-8.jpg");
   background-size: cover;
 }
 
@@ -396,7 +396,7 @@
 
   margin-bottom: 2rem;
 
-  background: no-repeat url("../assets/images/interior-9.jpg");
+  background: no-repeat url("/images/interior-9.jpg");
   background-size: cover;
 }
 
