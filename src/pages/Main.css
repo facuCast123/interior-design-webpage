@@ -1,0 +1,739 @@
+/* ------- HERO -------- */
+/* Hero Main */
+.hero {
+  margin: 100px 0;
+}
+
+.hero__main {
+  position: relative;
+  display: flex;
+
+  height: 800px;
+  width: 90%;
+
+  margin: 0 auto;
+}
+
+.hero__image--one {
+  position: absolute;
+  top: 0;
+  left: 27%;
+
+  min-width: 535px;
+  min-height: 535px;
+
+  background: url("../assets/images/interior-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__text {
+  width: 25%;
+
+  margin-top: 5rem;
+
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.hero__title {
+  position: absolute;
+  left: -455px;
+  bottom: -150px;
+
+  line-height: 75%;
+
+  font-size: 12rem;
+  font-family: "Abhaya Libre", serif;
+}
+
+.hero__title span {
+  color: white;
+  font: inherit;
+}
+
+/* Hero side */
+
+.hero__side {
+  position: absolute;
+  right: calc(50% - 750px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  max-width: 458px;
+}
+
+.hero__label {
+  font-weight: 700;
+}
+
+.hero__heading {
+  font-size: 2rem;
+  font-family: "Abhaya Libre", serif;
+}
+
+.hero__button {
+  width: max-content;
+
+  padding: 1rem;
+
+  font-size: 1.125rem;
+  font-family: "Abhaya Libre", serif;
+
+  background-color: white;
+  border: 1px solid black;
+
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.hero__button:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.hero__image--two {
+  min-width: 458px;
+  min-height: 458px;
+
+  background: url("../assets/images/interior-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ------ ABOUT ------- */
+
+.about {
+  display: flex;
+  gap: 7.5rem;
+
+  margin-bottom: 100px;
+}
+
+.about__image {
+  width: 553px;
+  height: 737px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 1rem;
+  padding-right: 5rem;
+}
+
+.about__label {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.about__title {
+  font-size: 7rem;
+  font-family: "Abhaya Libre", serif;
+
+  text-wrap: stable;
+}
+
+.about__text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.about__button {
+  width: fit-content;
+
+  padding: 1rem 2rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+
+  border: 1px solid transparent;
+  background-color: black;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+}
+
+.about__button:hover {
+  background-color: white;
+
+  color: black;
+
+  border: 1px solid black;
+}
+
+/* ----- PROGRAM ----- */
+
+.program {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+
+  margin-bottom: 150px;
+}
+
+.program__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2rem;
+}
+
+.program__title {
+  font-size: 5.5rem;
+  font-family: "Abhaya Libre", serif;
+}
+
+.program__description--one,
+.program__description--two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.program__description__text {
+  height: fit-content;
+  width: 50%;
+}
+
+.program__description__label {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: "Abhaya Libre", serif;
+}
+
+.program__image--top {
+  width: 833px;
+  height: 625px;
+
+  background: no-repeat url("../assets/images/interior-4.jpg");
+  background-size: cover;
+}
+
+.image--top,
+.image--bot {
+  width: 561px;
+  height: 374px;
+}
+
+.image--top {
+  position: relative;
+
+  background: no-repeat url("../assets/images/interior-5.jpg");
+  background-size: cover;
+}
+
+.image--bot {
+  position: absolute;
+  right: -200px;
+  bottom: -270px;
+
+  border: 5px solid white;
+}
+
+.program__description__paragraph {
+  width: 90%;
+
+  font-size: 1.5rem;
+}
+
+/* ----- MENTORSHIP ----- */
+
+.mentorship {
+  margin-bottom: 100px;
+}
+
+.mentorship__title {
+  width: fit-content;
+
+  margin: 0 auto 100px;
+
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: "Abhaya Libre", serif;
+}
+
+.mentorship__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10rem 3rem;
+}
+
+.mentorship__career {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  padding: 2rem;
+}
+
+.career__label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.career__heading {
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: "Abhaya Libre", serif;
+}
+
+.career__text {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.career__pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  span {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Abhaya Libre", serif;
+  }
+
+  p {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+}
+
+.career__button {
+  width: max-content;
+
+  padding: 1rem 2rem;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+
+  border: 1px solid black;
+  background-color: white;
+
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.career__button:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.mentorship__image--one {
+  width: 457px;
+  height: 811px;
+
+  background: no-repeat url("../assets/images/interior-7.jpg");
+  background-size: cover;
+}
+
+.mentorship__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  padding: 2rem;
+}
+
+.mentorship__info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  font-size: 1.5rem;
+
+  span {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.mentorship__image--two {
+  width: 497px;
+  height: 746px;
+
+  background: no-repeat url("../assets/images/interior-8.jpg");
+  background-size: cover;
+}
+
+.mentorship__subheading {
+  padding-top: 5rem;
+
+  h1 {
+    margin-bottom: 2rem;
+
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: "Abhaya Libre", serif;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.mentorship__image--three {
+  width: 487px;
+  height: 583px;
+
+  margin-bottom: 2rem;
+
+  background: no-repeat url("../assets/images/interior-9.jpg");
+  background-size: cover;
+}
+
+.mentorship__image--three__info {
+  font-size: 1.25rem;
+}
+
+/* ----- CONTACT ----- */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 100px;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+
+  font-size: 1.5rem;
+
+  button {
+    width: fit-content;
+
+    padding: 1rem 2rem;
+
+    font-size: 1.5rem;
+
+    border: 1px solid black;
+    background-color: white;
+
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+}
+
+.contact__image {
+  width: 740px;
+  height: 530px;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+@media (max-width: 1560px) {
+  /* HERO */
+  .hero__main {
+    flex-direction: column;
+
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .hero__text {
+    display: none;
+  }
+
+  .hero__image--one {
+    position: relative;
+    left: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
+  }
+
+  .hero__title {
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: auto;
+
+    width: fit-content;
+
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+  }
+
+  .hero__side {
+    position: relative;
+    right: 0;
+
+    max-width: none;
+
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .hero__label {
+    display: none;
+  }
+
+  .hero__heading {
+    order: 1;
+
+    text-align: center;
+  }
+
+  .hero__image--two {
+    width: 90%;
+    order: 2;
+  }
+
+  .hero__button {
+    order: 3;
+
+    font-size: 2.5rem;
+    padding: 1rem 5rem;
+  }
+
+  /* ABOUT */
+  .about {
+    gap: 0;
+  }
+
+  .about__image {
+    height: auto;
+  }
+
+  .about__content {
+    padding: 0 1rem;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* PROGRAM */
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .program__image--top {
+    order: 2;
+
+    width: auto;
+  }
+
+  .program > :nth-child(1 of .program__description) {
+    order: 1;
+  }
+
+  .program > :nth-child(2 of .program__description) {
+    order: 3;
+
+    text-align: center;
+  }
+
+  .program__image-wrapper {
+    display: none;
+  }
+
+  .program__description--one {
+    justify-content: flex-end;
+  }
+
+  .program__description__text {
+    font-size: 1.125rem;
+  }
+
+  .program__description__paragraph {
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  /* MENTORSHIP */
+
+  .mentorship__title {
+    text-align: center;
+  }
+
+  .mentorship__grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5rem 1rem;
+  }
+
+  .mentorship__image--one,
+  .mentorship__image--two {
+    height: auto;
+    width: auto;
+
+    background-position: center;
+  }
+
+  .mentorship__info {
+    display: none;
+  }
+
+  .mentorship__image--three__container {
+    display: none;
+  }
+
+  .mentorship__subheading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  /* CONTACT */
+
+  .contact {
+    position: relative;
+  }
+
+  .contact__content {
+    position: absolute;
+    bottom: 0;
+
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+
+    color: white;
+
+    backdrop-filter: blur(3px);
+    padding: 1rem 0;
+
+    width: 100%;
+  }
+
+  .contact__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 12/9;
+
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  /* ABOUT */
+  .about__image {
+    width: 353px;
+  }
+
+  .about__label,
+  .about__text,
+  .about__button {
+    font-size: 1rem;
+  }
+
+  .about__title {
+    font-size: 3.5rem;
+  }
+
+  /* MENTORSHIP */
+
+  .career__pricing {
+    font-weight: 600;
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  /* ABOUT */
+
+  .about {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about__image {
+    width: 100%;
+  }
+
+  /* MENTORSHIP */
+
+  .mentorship__title {
+    font-size: 3rem;
+  }
+
+  .mentorship__grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .mentorship__image--one {
+    order: 1;
+  }
+
+  .mentorship__career {
+    order: 2;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .mentorship__image--two {
+    order: 3;
+  }
+
+  .mentorship__subheading {
+    order: 4;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .mentorship__image--one,
+  .mentorship__image--two {
+    width: 100%;
+    height: 500px;
+  }
+}
