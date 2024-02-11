@@ -1,0 +1,156 @@
+/* Navbar */
+:root {
+  --i: 0;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 2000px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto 100px;
+  padding: 1rem 2rem;
+
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.navbar__title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Abhaya Libre", serif;
+
+  cursor: default;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.5rem;
+
+  font-size: 1.125rem;
+
+  list-style: none;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.navbar__links li:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.navbar__button {
+  padding: 1rem 2rem;
+
+  background-color: black;
+
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+}
+
+.navbar__button:hover {
+  background-color: white;
+
+  color: black;
+
+  border: 1px solid black;
+}
+
+#check {
+  display: none;
+}
+
+.navbar__icons {
+  position: absolute;
+  right: 5%;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 850px) {
+  .headroom-wrapper {
+    border-bottom: 1px solid black;
+  }
+
+  .navbar__icons {
+    display: inline-flex;
+
+    #close-icon {
+      display: none;
+    }
+  }
+
+  #check:checked ~ .navbar__icons #menu-icon {
+    display: none;
+  }
+
+  #check:checked ~ .navbar__icons #close-icon {
+    display: block;
+  }
+
+  .navbar__links {
+    display: block;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 0;
+
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid transparent;
+
+    transition: 0.3s ease;
+    overflow: hidden;
+
+    li {
+      margin: 1.5rem 0;
+      transform: translateY(-50px);
+      opacity: 0;
+
+      transition: 0.3s ease;
+    }
+
+    li:hover {
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  #check:checked ~ .navbar__links {
+    height: 17rem;
+    border-bottom: 1px solid black;
+  }
+
+  #check:checked ~ .navbar__links li {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(0.15s * var(--i));
+  }
+
+  .navbar__button {
+    display: none;
+  }
+}
